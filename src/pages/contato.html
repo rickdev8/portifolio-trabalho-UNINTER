@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles/styles-contato.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="/src/assets/logo.png" alt="Logo" />
+      </div>
+      <div class="links">
+        <a href="/src/index.html">Home</a>
+        <a href="/src/pages/Sobremim.html">Sobre mim</a>
+        <a href="/src/pages/formacao.html">Formação</a>
+        <a href="/src/pages/projetos.html">Projetos</a>
+        <a href="/src/pages/contato.html">Contato</a>
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="image">
+        <img src="/src/assets/19362653-Photoroom.png" alt="Contato" />
+      </div>
+      <div class="form">
+        <h2>Entre em Contato</h2>
+        <form action="#" method="POST">
+          <label for="name">Nome</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Seu nome"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seu@email.com"
+            required
+          />
+
+          <label for="message">Mensagem</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Escreva sua mensagem..."
+            required
+          ></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

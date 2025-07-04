@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  background-color: #090e16;
+  color: #eee;
+}
+
+.navbar {
+  border-radius: 20px;
+  margin: 20px auto 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(122, 74, 226, 0.1);
+  padding: 0.55rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  margin: 0 80px;
+  gap: 1.8rem;
+}
+
+.links a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.links a:hover {
+  text-shadow: 0 0 8px #7a4ae2d3;
+  color: #7a4ae2d2;
+}
+
+.section-main p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.452);
+}
+
+.section-main #saudacoes {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 6px 12px;
+    margin-left: -4px;
+    text-align: center;
+    color: #7a4ae2;
+    width: 160px;
+    font-weight: 600;
+    box-shadow: 0px 0px 3px #5a34b5;
+}
+
+.section-main #saudacoes:hover {
+    box-shadow: 0px 0px 6px #6e33fa;
+}
+
+.section-main h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #7a4ae2;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.icons a {
+  color: #7a4ae2;
+  text-align: center;
+  font-size:29px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 0px 8px #7d47fa;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.icons a li {
+    font-size: 100px;
+}
+
+.icons a:hover {
+    color: #090E16;
+  background-color: #7a4ae2;
+}
+
+section {
+  width: 80%;
+  margin: 220px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;;
+  color: #eee;
+  flex-wrap: nowrap; 
+}
+
+.section-main {
+  flex: 1 1 49%; 
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.div-image {
+  position: relative;  
+  flex: 1 1 62%; 
+  min-width: 250px;
+  height:400px;        
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#perfil {
+    border-radius: 68%;
+    z-index: 100;
+    width: 380px;
+}
+
+.div-image img:nth-child(1) {
+  position: absolute;
+  top: 35px;
+  left:20px;
+  width: 600px;
+  height: 310px;
+  border-radius: 20px;
+  object-fit: cover;
+  z-index: 1;
+}
+
+
+.div-image img:nth-child(2) {
+  position: absolute;
+  top: 0px;      
+  left:88px;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  z-index: 2;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.div-image img {
+  max-width: 100%;
+  height: auto; 
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.contato {
+  flex-direction: column;
+  flex-basis: 50%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: end;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.contato #down  {
+  text-decoration: none;
+  margin-left: 20%;
+  text-align: end;
+  color: #7a4ae2;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.contato p:hover {
+  color: #b296f2;
+}
+
+.contato #ctt {
+  text-decoration: none;
+  box-shadow: 0px 0px 8px #7d47fa;
+  background-color: transparent;
+  color: #5a34b5;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contato button:hover {
+    color: #090E16;
+  background-color: #5a34b5;
+}
+
+@media (max-width: 900px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-main,
+  .div-image {
+    flex: none;
+    width: 100%;
+  }
+
+  .contato {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0;
+  }
+}

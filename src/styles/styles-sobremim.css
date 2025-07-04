@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: bold;
+  background-color: #090e16;
+  color: #eee;
+}
+
+.navbar {
+  border-radius: 20px;
+  margin: 20px auto 0;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(122, 74, 226, 0.1);
+  padding: 0.55rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  margin: 0 80px;
+  gap: 1.8rem;
+}
+
+.links a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.4rem 0.6rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.links a:hover {
+  text-shadow: 0 0 8px #7a4ae2d3;
+  color: #7a4ae2d2;
+}
+
+.div-sobremim {
+  width: 80%;
+  margin: 200px auto;
+  padding-left: 60px;
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; 
+}
+
+.sobremim-img {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    width: 500px;
+    height: 400px;
+}
+
+.sobremim-img img {
+  object-fit: cover;
+  width: 65%;
+  height: 320px;
+  border-radius: 100%;
+  box-shadow: 0 0 10px #7a4ae2c0;
+  object-fit: cover;
+}
+
+.sobremim-text {
+  width: 700px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.button-sobremim button {
+  background-color: #7a4ae2;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-sobremim button:hover {
+  background-color: #5a34b5;
+}
+
+.nome-sobremim h1 {
+  font-size: 3rem;
+  color: #7a4ae2;
+}
+
+.text-sobremim p {
+  margin-top: 15px;
+  margin-bottom: 0.1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 900px) {
+  .div-sobremim {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobremim-img img {
+    width: 200px;
+  }
+}
