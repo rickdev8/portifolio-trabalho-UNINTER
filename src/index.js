@@ -1,5 +1,7 @@
+const name = document.querySelector("#name").value;
+
 function AlertForm(event) {
   event.preventDefault();
-  const name = document.querySelector("#name").value;
-  window.alert(`Parabéns ${name}, registro enviado com sucesso!`);
+  const message = `Parabéns ${name}, registro enviado com sucesso!`
+  window.alert(message);
 }
