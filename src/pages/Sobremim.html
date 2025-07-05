@@ -1,65 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Caminho RELATIVO correto para o CSS -->
   <link rel="stylesheet" href="../styles/styles-sobremim.css">
+
+  <!-- Fontes e ícones -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Macondo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IN&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Yatra+One&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Macondo&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playwrite+IN&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Yatra+One&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <title>Sobre Mim</title>
 </head>
 
 <body>
   <section>
-
-    <body>
-      <div class="navbar">
-        <div class="logo">
-          <img src="../assets/logo.png" alt="Logo" />
-        </div>
-        <div class="links">
-        <a href="./index.html">Home</a>
+    <div class="navbar">
+      <div class="logo">
+        <!-- Caminho relativo para logo -->
+        <img src="../assets/logo.png" alt="Logo" />
+      </div>
+      <div class="links">
+        <!-- Todas as rotas RELATIVAS -->
+        <a href="../index.html">Home</a>
         <a href="../pages/Sobremim.html">Sobre mim</a>
         <a href="../pages/formacao.html">Formação</a>
         <a href="../pages/projetos.html">Projetos</a>
         <a href="../pages/contato.html">Contato</a>
       </div>
+    </div>
+
+    <div class="div-sobremim">
+      <div class="sobremim-img">
+        <img src="../assets/Design sem nome (4) (1).png" alt="Henrique Abade" />
       </div>
-      <div class="div-sobremim">
-        <div class="sobremim-img">
-          <img src="../assets/Design sem nome (4) (1).png" />
+      <div class="sobremim-text">
+        <div class="button-sobremim">
+          <button>Sobre mim</button>
         </div>
-        <div class="sobremim-text">
-          <div class="button-sobremim">
-            <button>Sobre mim</button>
-          </div>
-          <div class="nome-sobremim">
-            <h1>Henrique Abade Lemos</h1>
-          </div>
-          <div class="text-sobremim">
-            <p>
-              👋 Me chamo Henrique Abade Lemos, mas pode me chamar
-              apenas de Henrique. Prazer!
-            </p>
-            <p>
-              👨‍💻 Há mais de 2 anos desenvolvendo e programando interfaces com
-              JavaScript, React JS e Typescript, NodeJs, Html e Css.
-            </p>
-            <p>
-              🎓 Cursando em Análise e Desenvolvimento de Sistemas pela UNINTER
-              Ead
-            </p>
-            <p>
-              💡 Interesses em desenvolvimento Full-Stack com React, NodeJs,
-              Typescript e NextJs.
-            </p>
-            <p>🚀 Tentando ser um pouquinho melhor do que ontem todos dias.</p>
-          </div>
+        <div class="nome-sobremim">
+          <h1>Henrique Abade Lemos</h1>
+        </div>
+        <div class="text-sobremim">
+          <p>👋 Me chamo Henrique Abade Lemos, mas pode me chamar apenas de Henrique. Prazer!</p>
+          <p>👨‍💻 Há mais de 2 anos desenvolvendo e programando interfaces com JavaScript, React JS, Typescript, NodeJs, HTML e CSS.</p>
+          <p>🎓 Cursando Análise e Desenvolvimento de Sistemas pela UNINTER EAD.</p>
+          <p>💡 Interesses em desenvolvimento Full-Stack com React, NodeJs, Typescript e NextJs.</p>
+          <p>🚀 Tentando ser um pouquinho melhor do que ontem todos os dias.</p>
         </div>
       </div>
+    </div>
   </section>
 </body>
-
 </html>
