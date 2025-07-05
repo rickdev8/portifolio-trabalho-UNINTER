@@ -1,5 +1,4 @@
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-  event.preventDefault();
-  const name = document.getElementById('name').value;
-  alert(`Parabéns ${name}, registro enviado com sucesso!`);
-});
+function AlertForm() {
+  const name = document.querySelector("#name").value;
+  window.alert(`Parabéns ${name}!, registro enviado com sucesso.`);
+}

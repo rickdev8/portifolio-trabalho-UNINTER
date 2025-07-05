@@ -39,7 +39,7 @@ body {
 .links a {
   color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.01rem;
   padding: 0.4rem 0.6rem;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease;
